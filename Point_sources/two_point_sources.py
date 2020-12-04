@@ -31,7 +31,7 @@ class Monopole():
 
 name_gif = 'two_sources.gif'
 # Grid parameters
-N = 1000
+N = 200
 xmin, xmax = -5, 5  # m
 ymin, ymax = -5, 5  # m
 x, y = np.linspace(xmin, xmax, N), np.linspace(ymin, ymax, N)
@@ -103,6 +103,6 @@ def animate(i):
 
 
 my = animation.FuncAnimation(fig, animate, init_func=init,
-                             frames=24, interval=20, blit=False, repeat=True)
+                             frames=24, interval=30, blit=False, repeat=True)
 plt.show()
 my.save(name_gif, writer='imagemagick', fps=24, dpi=150)
