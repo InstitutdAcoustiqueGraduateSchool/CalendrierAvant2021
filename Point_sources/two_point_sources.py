@@ -85,7 +85,7 @@ fig.suptitle('Pression rayonnée par deux points sources')
 ax.set_title('1')
 ax2.set_title('2')
 # fig.tight_layout()
-plt.close()
+# plt.close()
 
 
 def init():
@@ -104,4 +104,5 @@ def animate(i):
 
 my = animation.FuncAnimation(fig, animate, init_func=init,
                              frames=24, interval=20, blit=False, repeat=True)
+plt.show()
 my.save(name_gif, writer='imagemagick', fps=24, dpi=150)
