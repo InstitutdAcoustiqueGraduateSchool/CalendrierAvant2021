@@ -105,4 +105,4 @@ def animate(i):
 my = animation.FuncAnimation(fig, animate, init_func=init,
                              frames=24, interval=30, blit=False, repeat=True)
 plt.show()
-my.save(name_gif, writer='imagemagick', fps=24, dpi=150)
+# my.save(name_gif, writer='imagemagick', fps=24, dpi=150)# saving as gif, need to install imagemagick
